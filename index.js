@@ -16,6 +16,7 @@ class Pokemon{
         this.maxPdv = maxPdv;
         this.pdv = maxPdv;
     }
+
     attack_one(pokemon, mult){
 
         if(this.attaque1.degats>=pokemon.pdv){
@@ -80,6 +81,7 @@ displayVs();
 let choice = startFirst(); // who starts
 showPdv(Evolu, Pikatchu); // display PDV
 
+// fonction attaque(pokemon1 , pokemon2)
 if(choice==1){
     while(battleOn){
         Evolu.attaque(Pikatchu);
